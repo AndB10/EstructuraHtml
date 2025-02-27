@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interfaz de Usuario</title>
+    <title>Interfaz de Chat</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="top-bar">
-            <div class="menu-icon"></div>
-            <div class="edit-icon"></div>
-            <div class="status-indicator"></div>
+        <div class="sidebar">
+            <div class="icons">
+                <div class="icon menu"></div>
+                <div class="icon search"></div>
+                <div class="icon compose"></div>
+            </div>
+            <div class="recent-chats">
+                <p>Chats Recientes</p>
+            </div>
         </div>
-        <div class="input-bar">
-            <div class="folder-icon"></div>
-            <input type="text" class="text-input">
-            <div class="send-icon"></div>
+        <div class="main">
+            <div class="chat-area"></div>
+            <div class="input-area">
+                <input type="text" placeholder="Escribe un mensaje...">
+                <button class="send-button"></button>
+            </div>
         </div>
     </div>
 </body>

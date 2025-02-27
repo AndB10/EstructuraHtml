@@ -1,73 +1,77 @@
 body {
     margin: 0;
-    padding: 0;
-    background-color: #4a4a4a;
     font-family: Arial, sans-serif;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
     height: 100vh;
-    justify-content: space-between;
+    background-color: #4a4a4a;
 }
 
-.top-bar {
+.sidebar {
+    width: 20%;
+    background-color: #3a3a3a;
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
 }
 
-.menu-icon {
-    width: 24px;
-    height: 24px;
-    background-image: url('menu-icon.png');
-    background-size: cover;
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
-.edit-icon {
-    width: 24px;
-    height: 24px;
-    background-image: url('edit-icon.png');
-    background-size: cover;
-}
-
-.status-indicator {
-    width: 24px;
-    height: 24px;
-    background-color: #d3d3d3;
+.icon {
+    width: 30px;
+    height: 30px;
+    background-color: #3822b8;
     border-radius: 50%;
 }
 
-.input-bar {
+.recent-chats {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+
+.chat-area {
+    flex-grow: 1;
+    background-color: #4a4a4a;
+}
+
+.input-area {
     display: flex;
     align-items: center;
-    padding: 5px;
     background-color: #000;
-    border-radius: 25px;
-    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
 }
 
-.folder-icon {
-    width: 16px;
-    height: 16px;
-    background-image: url('folder-icon.png');
-    background-size: cover;
-    margin-right: 5px;
-}
-
-.text-input {
-    flex: 1;
-    padding: 2px;
+input[type="text"] {
+    flex-grow: 1;
     border: none;
-    border-radius: 12px;
-    font-size: 0.8rem;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 10px;
 }
 
-.send-icon {
-    width: 16px;
-    height: 16px;
-    background-image: url('send-icon.png');
-    background-size: cover;
-    margin-left: 5px;
+.send-button {
+    width: 30px;
+    height: 30px;
+    background-color: #3822b8;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
 }
