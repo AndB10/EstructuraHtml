@@ -1,77 +1,105 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
 }
 
 .container {
-    display: flex;
-    height: 100vh;
-    background-color: #4a4a4a;
+    display: flex; /* Contenedor flexible */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: #4a4a4a; /* Color de fondo */
 }
 
 .sidebar {
-    width: 20%;
-    background-color: #3a3a3a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
+    width: 20%; /* Ancho del 20% de la ventana */
+    background-color: #3a3a3a; /* Color de fondo */
+    display: flex; /* Contenedor flexible */
+    flex-direction: column; /* Dirección de los elementos en columna */
+    align-items: left; /* Alineación centrada de los elementos */
+    padding-top: 20px; /* Espacio superior interno */
 }
 
 .icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    display: flex; /* Contenedor flexible */
+    flex-direction: column; /* Dirección de los elementos en columna */
+    align-items: left; /* Alineación centrada de los elementos */
+    gap: 30px; /* Espaciado entre los iconos */
 }
 
 .icon {
-    width: 30px;
-    height: 30px;
-    background-color: #3822b8;
-    border-radius: 50%;
+    width: 60px; /* Ancho del icono */
+    height: 30px; /* Altura del icono */
+    background-color: #3a3a3a; /* Color de fondo */
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Bordes redondeados */
+    color: #000; /* Color del texto */
+    cursor: pointer; /* Cursor de puntero */
+    display: flex; /* Contenedor flexible */
+    align-items: center; /* Alineación centrada verticalmente */
+    justify-content: center; /* Alineación centrada horizontalmente */
 }
 
 .recent-chats {
-    margin-top: 20px;
-    color: #fff;
+    margin-top: 20px; /* Margen superior */
+    color: #ffffff; /* Color del texto */
 }
 
 .main {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-    position: relative;
+    width: 80%; /* Ancho del 80% de la ventana */
+    display: flex; /* Contenedor flexible */
+    flex-direction: column; /* Dirección de los elementos en columna */
+    justify-content: space-between; /* Distribución del espacio */
+    padding: 20px; /* Espacio interno */
+    position: relative; /* Posición relativa */
 }
 
 .chat-area {
-    flex-grow: 1;
-    background-color: #4a4a4a;
+    flex-grow: 1; /* Crece para ocupar el espacio disponible */
+    background-color: #4a4a4a; /* Color de fondo */
 }
 
 .input-area {
-    display: flex;
-    align-items: center;
-    background-color: #000;
-    padding: 10px;
-    border-radius: 20px;
+    display: flex; /* Contenedor flexible */
+    align-items: center; /* Alineación centrada verticalmente */
+    background-color: #000; /* Color de fondo */
+    padding: 10px; /* Espacio interno */
+    border-radius: 20px; /* Bordes redondeados */
 }
-
 input[type="text"] {
-    flex-grow: 1;
-    border: none;
-    padding: 10px;
-    border-radius: 20px;
-    margin-right: 10px;
+    flex-grow: 1; /* Crece para ocupar el espacio disponible */
+    border: none; /* Sin borde */
+    background-color: #e9bbd7; /* Color de fondo */
+    padding: 10px; /* Espacio interno */
+    border-radius: 20px; /* Bordes redondeados */
+    margin-right: 10px; /* Margen derecho */
 }
 
 .send-button {
-    width: 30px;
-    height: 30px;
-    background-color: #3822b8;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
+    width: 40px; /* Ancho del botón */
+    height: 40px; /* Altura del botón */
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor de puntero */
+    display: flex; /* Contenedor flexible */
+    align-items: center; /* Alineación centrada verticalmente */
+    justify-content: center; /* Alineación centrada horizontalmente */
+}
+
+.send-icon {
+    width: 30px; /* Ancho del icono */
+    height: 30px; /* Altura del icono */
+}
+
+.menu-icon {
+    width: 50px; /* Ajusta según sea necesario */
+    height: 50px; /* Ajusta según sea necesario */
+}
+
+.search-icon {
+    width: 50px; /* Ajusta según sea necesario */
+    height: 50px; /* Ajusta según sea necesario */
+}
+
+.compose-icon {
+    width: 50px; /* Ajusta según sea necesario */
+    height: 50px; /* Ajusta según sea necesario */
 }
